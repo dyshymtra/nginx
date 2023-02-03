@@ -4,6 +4,6 @@ EXPOSE 8081
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-#COPY /app/ /usr/share/nginx/html
+COPY /app/ /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
